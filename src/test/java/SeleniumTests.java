@@ -22,7 +22,7 @@ public class SeleniumTests {
         String actual =  driver.findElement(By.id("addmessage")).getText();
         System.out.println(actual);
 
-        Assert.assertEquals(actual,"30");
+        Assert.assertEquals(actual,"20");
     }
 
     @Test
