@@ -19,14 +19,14 @@ public class SeleniumTest {
         driver.get("https://www.lambdatest.com/selenium-playground/simple-form-demo");
         System.out.println(driver.getTitle());
 
-        driver.findElement(By.id("sum1")).sendKeys("30");
+        driver.findElement(By.id("sum1")).sendKeys("20");
         driver.findElement(By.id("sum2")).sendKeys("20");
         driver.findElement(By.xpath("//button[text()='Get Sum']")).click();
 
         String actual =  driver.findElement(By.id("addmessage")).getText();
         System.out.println(actual);
 
-        Assert.assertEquals(actual,"50");
+        Assert.assertEquals(actual,"40");
     }
 
     @Test(priority = 2)
